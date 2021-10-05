@@ -12,25 +12,34 @@
 			font-size: 36px;
 			color: #55ff55; }
 	</style>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 
 </head>
 <body>
-
-	<img src="pucsim.jpg" alt="照片">
-
-	<header>
+	<main class="container-fluid text-center ">
+		<header>
 		<ul>
 			<nav>
-				<li><a href="#aboutme">關於我</a></li>
-				<li><a href="#youtube">珍藏影片</a></li>
+				<li><a href="#aboutme">關於我</a>&emsp;</td><a href="#youtube">珍藏影片</a></li>
 			</nav>
 		</ul>
 		
 	</header>
+
+	<main class="container-fluid bg-info text-white text-center ">
+
+	<img src="pucsim.jpg" alt="照片">
+
+	<div class="row">
 	
+	
+
+
 	<br>
 	
-	<session id="aboutme">
+	<session id="aboutme" class="col-lg-4">
 		<header><h3>我的資料<h3></header>
 		<article>
 			<h4>名稱：王漢瑋</h4>
@@ -43,12 +52,14 @@
 	
 	<br>
 	
-	<session id="youtube">
+	<session id="youtube" class="col-lg-4">
 		<header><h3>珍藏影片</h3></header>
 		<article>
 	<iframe src="https://www.youtube.com/embed/eo2nsW096dE"allowfullscreen></iframe>
 		</article>
 	</session>
+
+	</div>
 
 </body>
 </html>
