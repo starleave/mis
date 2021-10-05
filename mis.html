@@ -30,7 +30,8 @@
 
 	<main class="container-fluid bg-info text-white text-center ">
 
-	<img src="pucsim.jpg" alt="照片">
+	<img src="pucsim.jpg" alt="照片" class="img-fluid rounded-circle"
+>
 
 	<div class="row">
 	
@@ -39,7 +40,7 @@
 
 	<br>
 	
-	<session id="aboutme" class="col-lg-4">
+	<session id="aboutme" class="col-lg-5">
 		<header><h3>我的資料<h3></header>
 		<article>
 			<h4>名稱：王漢瑋</h4>
@@ -52,10 +53,13 @@
 	
 	<br>
 	
-	<session id="youtube" class="col-lg-4">
+	<session id="youtube" class="col-lg-5">
 		<header><h3>珍藏影片</h3></header>
 		<article>
-	<iframe src="https://www.youtube.com/embed/eo2nsW096dE"allowfullscreen></iframe>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe src="https://www.youtube.com/embed/eo2nsW096dE"allowfullscreen class="embed-responsive-item"></iframe>
+				</iframe>
+		</div>
 		</article>
 	</session>
 
