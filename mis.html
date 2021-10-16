@@ -19,7 +19,22 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+	<script>
+	$(document).ready(function(){
+		$("#I").hover(function(){
+			$("#PICTURE").attr("src","pucsim.jpg");
+		});
 
+		$("#PU").hover(function(){
+			$("#PICTURE").attr("src","pu.jpg");
+		});
+
+		$("#PUCSIM").click(function(){
+			$("#PUCSIM").hide();
+			$("#PUCSIM").fadeIn("slow")
+		});
+	});
+	</script>
 
 </head>
 <body>
@@ -44,7 +59,7 @@
 
 	<main class="container-fluid bg-info text-white text-center ">
 
-	<img src="pucsim.jpg" alt="照片" class="img-fluid rounded-circle">
+	<img src="pucsim.jpg" alt="照片" class="img-fluid rounded-circle" id="PUCSIM">
 
 	<div class="row">
 	
@@ -56,9 +71,9 @@
 	<session id="aboutme" class="col-lg-5">
 		<header><h3>我的資料<h3></header>
 		<article>
-			<h4>名稱：<a href="https://www1.pu.edu.tw/~s1091826" class="text-reset text-decoration-none text-white bg-info">
+			<h4>名稱：<a href="https://www1.pu.edu.tw/~s1091826" class="text-reset text-decoration-none text-white bg-info" target="_blank" id="I">
 			<u>王漢瑋</u></a></h4>
-			<h4>學校：<a href="https://www.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-info"><u>靜宜大學</u></a></h4>
+			<h4>學校：<a href="https://www.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-info" id="PU"><u>靜宜大學</u></a></h4>
 			<h4>班級：資管二A</h4>
 			<h4>生日：12/18</h4>
 			<h4>星座：射手座</h4>
